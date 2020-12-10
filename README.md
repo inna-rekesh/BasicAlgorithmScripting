@@ -3,6 +3,7 @@
 ## TASK 6
 ### Confirm the EndingPassed
 Check if a string (first argument, str) ends with the given target string (second argument, target).
+
 This challenge can be solved with the .endsWith() method, which was introduced in ES2015. But for the purpose of this challenge, we would like you to use one of the JavaScript substring methods instead.
 ## TASK 7
 
@@ -20,37 +21,50 @@ Create a function that looks through an array arr and returns the first element 
 ## TASK 10 
 ### Boo whoPassed
 Check if a value is classified as a boolean primitive. Return true or false.
+
 Boolean primitives are true and false.
 
 ## TASK 11
 ### Title Case a SentencePassed
 Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
+
 For the purpose of this exercise, you should also capitalize connecting words like "the" and "of".
+
 
 ## TASK 12
 ### Slice and SplicePassed
 You are given two arrays and an index.
+
 Copy each element of the first array into the second array, in order.
+
 Begin inserting elements at index n of the second array.
+
 Return the resulting array. The input arrays should remain the same after the function runs.
 
 ## TASK 13
 ### Falsy BouncerPassed
 Remove all falsy values from an array.
+
 Falsy values in JavaScript are false, null, 0, "", undefined, and NaN.
+
 Hint: Try converting each value to a Boolean.
 
 ## TASK 14
 ### Where do I BelongPassed
 Return the lowest index at which a value (second argument) should be inserted into an array (first argument) once it has been sorted. The returned value should be a number.
+
 For example, getIndexToIns([1,2,3,4], 1.5) should return 1 because it is greater than 1 (index 0), but less than 2 (index 1).
+
 Likewise, getIndexToIns([20,3,5], 19) should return 2 because once the array has been sorted it will look like [3,5,20] and 19 is less than 20 (index 2) and greater than 5 (index 1).
 
 ## TASK 15
 ### MutationsPassed
 Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.
+
 For example, ["hello", "Hello"], should return true because all of the letters in the second string are present in the first, ignoring case.
+
 The arguments ["hello", "hey"] should return false because the string "hello" does not contain a "y".
+
 Lastly, ["Alien", "line"], should return true because all of the letters in "line" are present in "Alien".
 
 ## TASK 16
@@ -64,8 +78,23 @@ Write a function that splits an array (first argument) into groups the length of
 ### Palindrome CheckerPassed
 
 Return true if the given string is a palindrome. Otherwise, return false.
+
 A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
 Note
+
 You'll need to remove all non-alphanumeric characters (punctuation, spaces and symbols) and turn everything into the same case (lower or upper case) in order to check for palindromes.
+
 We'll pass strings with varying formats, such as "racecar", "RaceCar", and "race CAR" among others.
+
 We'll also pass strings with special symbols, such as "2A3*3a2", "2A3 3a2", and "2_A3*3#A2".
+
+
+## TASK 3
+### Caesars Cipher
+One of the simplest and most widely known ciphers is a Caesar cipher, also known as a shift cipher. In a shift cipher the meanings of the letters are shifted by some set amount.
+
+A common modern use is the ROT13 cipher, where the values of the letters are shifted by 13 places. Thus 'A' ↔ 'N', 'B' ↔ 'O' and so on.
+
+Write a function which takes a ROT13 encoded string as input and returns a decoded string.
+
+All letters will be uppercase. Do not transform any non-alphabetic character (i.e. spaces, punctuation), but do pass them on.
