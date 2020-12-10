@@ -98,3 +98,19 @@ function chunkArrayInGroups(arr, size) {
 }
 
 chunkArrayInGroups(["a", "b", "c", "d"], 2);
+
+
+//JavaScript Algorithms and Data Structures Projects: Palindrome Checker
+function palindrome(str) {
+  return str.replace(/[\W_]/g, "").toLowerCase()===
+    str
+      .replace(/[\W_]/g, "")
+      .toLowerCase()
+      .split('')
+      .reverse()
+      .join('')
+}
+
+
+
+palindrome("1 eye for of 1 eye.");
