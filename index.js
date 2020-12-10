@@ -7,3 +7,9 @@ function repeatStringNumTimes(str, num) {
 }
 
 repeatStringNumTimes("abc", 3);
+
+function confirmEnding(str, target) {
+  return str.slice(-target.length)===target;
+}
+
+confirmEnding("Bastian", "n");
