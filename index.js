@@ -66,3 +66,16 @@ function bouncer(arr) {
 }
 
 bouncer([7, "ate", "", false, 9]);
+
+function getIndexToIns(arr, num) {
+  let sorted = arr.sort((a,b)=>a-b);
+  let res = arr.length;
+  for(let i = arr.length-1; i>=0;i--){
+    if(sorted[i]>=num){
+      res=i
+    }
+  }
+  return res;
+}
+
+getIndexToIns([3, 10, 5], 3)
