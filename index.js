@@ -79,3 +79,12 @@ function getIndexToIns(arr, num) {
 }
 
 getIndexToIns([3, 10, 5], 3)
+
+
+function mutation(arr) {
+  const first = arr[0].toLowerCase();
+  const second = arr[1].toLowerCase();
+  return second.split('').every(item=>first.includes(item))
+}
+
+mutation(["Mary", "Aarmy"])
