@@ -33,3 +33,9 @@ function findElement(arr, func) {
 }
 
 findElement([1, 3, 5, 8, 9, 10], num => num % 2 === 0);
+
+function booWho(bool) {
+  return typeof bool==='boolean';
+}
+
+booWho(null);
