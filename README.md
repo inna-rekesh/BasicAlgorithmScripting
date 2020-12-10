@@ -56,3 +56,16 @@ Lastly, ["Alien", "line"], should return true because all of the letters in "lin
 ## TASK 16
 ### Chunky Monkey
 Write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a two-dimensional array.
+
+
+# JavaScript Algorithms and Data Structures Projects: 
+
+## TASK1
+### Palindrome CheckerPassed
+
+Return true if the given string is a palindrome. Otherwise, return false.
+A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
+Note
+You'll need to remove all non-alphanumeric characters (punctuation, spaces and symbols) and turn everything into the same case (lower or upper case) in order to check for palindromes.
+We'll pass strings with varying formats, such as "racecar", "RaceCar", and "race CAR" among others.
+We'll also pass strings with special symbols, such as "2A3*3a2", "2A3 3a2", and "2_A3*3#A2".
