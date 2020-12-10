@@ -19,3 +19,17 @@ function truncateString(str, num) {
 }
 
 truncateString("A-tisket a-tasket A green and yellow basket", 8);
+
+
+function findElement(arr, func) {
+  let num = 0;
+  for(let i=0; i<arr.length; i++){
+    if(func(arr[i])){
+      num = arr[i]
+      return num;
+    }
+  }
+  return undefined;
+}
+
+findElement([1, 3, 5, 8, 9, 10], num => num % 2 === 0);
